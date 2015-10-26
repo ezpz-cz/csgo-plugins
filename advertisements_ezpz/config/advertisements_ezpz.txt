@@ -1,0 +1,16 @@
+// colors are here: http://ctrlv.cz/9WrU
+
+"Advertisements"
+{
+    "1"
+    {
+        "cze"             "{DARKBLUE}[{DARKRED}EzPz.cz{DARKBLUE}] {NORMAL}Navštiv náš web pro více informací o našich serverech! {GREEN}ezpz.cz"
+        "en"              "{DARKBLUE}[{DARKRED}EzPz.cz{DARKBLUE}] {NORMAL}Visit our website to get more information about our servers! {GREEN}ezpz.cz"
+    }
+
+    "3"
+    {
+        "cze"             "{DARKBLUE}[{DARKRED}EzPz.cz{DARKBLUE}] {NORMAL}Jsme také na {BLUE}FACEBOOKU{NORMAL} - dej nám like a dostávej informace o dění na serveru! {GREEN}facebook.com/ezpzcz"
+        "en"              "{DARKBLUE}[{DARKRED}EzPz.cz{DARKBLUE}] {NORMAL}We are also on {BLUE}FACEBOOK{NORMAL} - give us like and get fresh information about our servers! {GREEN}facebook.com/ezpzcz"
+    }
+}

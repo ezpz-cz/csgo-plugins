@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+  <script src="getJsonFromUrl.js"></script>
+  <script type="text/javascript">
+      window.onload = function(){
+          var language = getJsonFromUrl()["lang"];
+          //var height = (screen.height * 0.7).toString();
+          //var width = (screen.width * 0.7).toString();
+          var height = 768;
+          var width = 1024;
+          var left = parseInt((screen.availWidth/2) - (width/2));
+          var top = parseInt((screen.availHeight/2) - (height/2));
+          
+          //window.open("sutaz.html", "Title", "screenX=" + left + ",screenY=" + top + ",height=" + height + ", width=" + width + ",scrollbars=yes");
+          
+          if (language == "cze")
+          {
+            //window.open("recruit_cze.html", "Title", "screenX=" + left + ",screenY=" + top + ",height=" + height + ", width=" + width + ",scrollbars=yes");
+            window.open("recruit_cze.html", "Title", "height=" + screen.height * 0.5 + ", width=" + screen.width * 0.75 + ", scrollbars=yes");
+          }
+          else
+          {
+            //window.open("recruit_en.html", "Title", "screenX=" + left + ",screenY=" + top + ",height=" + height + ", width=" + width + ",scrollbars=yes");
+            window.open("recruit_en.html", "Title", "height=" + screen.height * 0.85 + ", width=" + screen.width * 0.75 + ", scrollbars=yes");
+          }
+      };
+  </script>
+</head>
+<body>
+</body>
+</html

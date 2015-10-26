@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+  <meta http-equiv="content-type" content="text/html" charset="utf-8" />
+  <script src="getJsonFromUrl.js"></script>
+  <script type="text/javascript">
+      window.onload = function(){
+          var language = getJsonFromUrl()["lang"];
+          //var height = (screen.height * 0.7).toString();
+          //var width = (screen.width * 0.7).toString();
+          var height = 768;
+          var width = 1024;
+          var left = parseInt((screen.availWidth/2) - (width/2));
+          var top = parseInt((screen.availHeight/2) - (height/2));
+          console.log(height, width);
+          //window.open("sutaz.html", "Title", "screenX=" + left + ",screenY=" + top + ",height=" + height + ", width=" + width + ",scrollbars=yes");
+          
+          if (language == "cze")
+          {
+            window.open("sutaz.html", "Title", "screenX=" + left + ",screenY=" + top + ",height=" + height + ", width=" + width + ",scrollbars=yes");
+          }
+          else
+          {
+            window.open("contest.html", "Title", "screenX=" + left + ",screenY=" + top + ",height=" + height + ", width=" + width + ",scrollbars=yes");
+          }
+      };
+  </script>
+</head>
+<body>
+</body>
+</html
