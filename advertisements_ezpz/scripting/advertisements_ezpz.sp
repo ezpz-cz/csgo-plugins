@@ -3,15 +3,15 @@
 #include <sourcemod>
 #include <csgocolors>
 
-#define PL_VERSION    "1.0"
+#define PL_VERSION    "1.1"
 #define CVAR_DISABLED "OFF"
 #define CVAR_ENABLED  "ON"
 
 public Plugin:myinfo =
 {
-	name        = "EZPZ Advertisements",
+	name        = "EzPz.cz Advertisements",
 	author      = "gorgitko",
-	description = "Display colorful advertisements in different languages defined in file",
+	description = "Displays colorful advertisements in different languages defined in file",
 	version     = "1.1",
 	url         = "ezpz.cz"
 };
@@ -34,7 +34,7 @@ public OnPluginStart()
 {
   MAX_PLAYERS = GetMaxClients();
 
-	CreateConVar("sm_ezpz_ad_version", PL_VERSION, "Displays EZPZ Advertisements version.", FCVAR_PLUGIN|FCVAR_SPONLY|FCVAR_REPLICATED|FCVAR_NOTIFY);
+	CreateConVar("sm_ezpz_ad_version", PL_VERSION, "Displays EzPz.cz Advertisements version.", FCVAR_PLUGIN|FCVAR_SPONLY|FCVAR_REPLICATED|FCVAR_NOTIFY);
 	g_hEnabled        = CreateConVar("sm_ezpz_ad_enabled",  "1", "Enable/disable displaying advertisements.\n [DEFAULT: 1]");
 	g_hFile           = CreateConVar("sm_ezpz_ad_file",     "advertisements_ezpz.txt", "File to read the advertisements from.\n[DEFAULT: 'advertisements_ezpz.txt']");
 	g_hInterval       = CreateConVar("sm_ezpz_ad_interval", "30", "Amount of seconds between advertisements.\n[DEFAULT: 30]");
